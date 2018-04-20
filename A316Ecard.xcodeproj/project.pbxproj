@@ -14,6 +14,8 @@
 		5926B8482089D5D70036A01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5926B8462089D5D70036A01C /* LaunchScreen.storyboard */; };
 		5926B8532089D5D70036A01C /* A316EcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926B8522089D5D70036A01C /* A316EcardTests.swift */; };
 		5926B85E2089D5D70036A01C /* A316EcardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926B85D2089D5D70036A01C /* A316EcardUITests.swift */; };
+		5926B86C2089D8F10036A01C /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926B86B2089D8F10036A01C /* gameViewController.swift */; };
+		5926B86E2089F0A40036A01C /* word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926B86D2089F0A40036A01C /* word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5926B8592089D5D70036A01C /* A316EcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A316EcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5926B85D2089D5D70036A01C /* A316EcardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A316EcardUITests.swift; sourceTree = "<group>"; };
 		5926B85F2089D5D70036A01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5926B86B2089D8F10036A01C /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
+		5926B86D2089F0A40036A01C /* word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				5926B83D2089D5D50036A01C /* AppDelegate.swift */,
 				5926B83F2089D5D50036A01C /* ViewController.swift */,
 				5926B8412089D5D50036A01C /* Main.storyboard */,
+				5926B86D2089F0A40036A01C /* word.swift */,
+				5926B86B2089D8F10036A01C /* gameViewController.swift */,
 				5926B8442089D5D70036A01C /* Assets.xcassets */,
 				5926B8462089D5D70036A01C /* LaunchScreen.storyboard */,
 				5926B8492089D5D70036A01C /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5926B86C2089D8F10036A01C /* gameViewController.swift in Sources */,
+				5926B86E2089F0A40036A01C /* word.swift in Sources */,
 				5926B8402089D5D50036A01C /* ViewController.swift in Sources */,
 				5926B83E2089D5D50036A01C /* AppDelegate.swift in Sources */,
 			);
