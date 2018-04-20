@@ -43,6 +43,7 @@ class gameViewController: UIViewController {
     
     
     var cardnum = 1 //出第幾張牌
+    var linow = 1
     //按市民按鈕
     @IBAction func peoplebutton(_ sender: UIButton) {
         let rannum = distribution.nextInt()
@@ -56,7 +57,7 @@ class gameViewController: UIViewController {
         if cardnum == 1{
         kacard1.image = UIImage(named: "市民")
         kacard1.isHidden = false //開司第一張顯示市民
-        let linow = licardout[distribution2.nextInt()]
+        linow = licardout[distribution2.nextInt()]
             if linow == 1{ //利根川的牌是市民
                 licard1.image = UIImage(named: "市民")
                 licard1.isHidden = false //利根川第一張顯示市民
@@ -81,7 +82,7 @@ class gameViewController: UIViewController {
         if cardnum == 2{
             kacard2.image = UIImage(named: "市民")
             kacard2.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard2.image = UIImage(named: "市民")
                 licard2.isHidden = false
@@ -104,7 +105,7 @@ class gameViewController: UIViewController {
         if cardnum == 3{
             kacard3.image = UIImage(named: "市民")
             kacard3.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard3.image = UIImage(named: "市民")
                 licard3.isHidden = false
@@ -127,7 +128,7 @@ class gameViewController: UIViewController {
         if cardnum == 4{
             kacard4.image = UIImage(named: "市民")
             kacard4.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard4.image = UIImage(named: "市民")
                 licard4.isHidden = false
@@ -150,7 +151,7 @@ class gameViewController: UIViewController {
         if cardnum == 5{
             kacard5.image = UIImage(named: "市民")
             kacard5.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard5.image = UIImage(named: "市民")
                 licard5.isHidden = false
@@ -182,7 +183,7 @@ class gameViewController: UIViewController {
         if cardnum == 1{
             kacard1.image = UIImage(named: "奴隸")
             kacard1.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard1.image = UIImage(named: "市民")
                 licard1.isHidden = false
@@ -215,7 +216,7 @@ class gameViewController: UIViewController {
         if cardnum == 2{
             kacard2.image = UIImage(named: "奴隸")
             kacard2.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard2.image = UIImage(named: "市民")
                 licard2.isHidden = false
@@ -248,7 +249,7 @@ class gameViewController: UIViewController {
         if cardnum == 3{
             kacard3.image = UIImage(named: "奴隸")
             kacard3.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard3.image = UIImage(named: "市民")
                 licard3.isHidden = false
@@ -281,7 +282,7 @@ class gameViewController: UIViewController {
         if cardnum == 4{
             kacard4.image = UIImage(named: "奴隸")
             kacard4.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard4.image = UIImage(named: "市民")
                 licard4.isHidden = false
@@ -314,7 +315,7 @@ class gameViewController: UIViewController {
         if cardnum == 5{
             kacard5.image = UIImage(named: "奴隸")
             kacard5.isHidden = false
-            let linow = licardout[distribution2.nextInt()]
+            linow = licardout[distribution2.nextInt()]
             if linow == 1{
                 licard5.image = UIImage(named: "市民")
                 licard5.isHidden = false
@@ -370,11 +371,12 @@ class gameViewController: UIViewController {
     kacard3.isHidden = true
     kacard4.isHidden = true
     kacard5.isHidden = true
-        
+      
+    distribution2 = GKShuffledDistribution(lowestValue: 0, highestValue: 4)
     }
     
     let licardout = [1,1,1,1,2] //1:利根川出市民 2:利根川出皇帝
-    let distribution2 = GKShuffledDistribution(lowestValue: 0, highestValue: 4)
+    var distribution2 = GKShuffledDistribution(lowestValue: 0, highestValue: 4)
     
     
     //設定隨機數，隨機選取利根川挑釁發言，字串array在word.swift
